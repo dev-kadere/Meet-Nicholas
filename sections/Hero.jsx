@@ -4,51 +4,62 @@ import { FaLinkedin, FaWhatsapp, FaTwitter } from "react-icons/fa";
 const Hero = () => {
   const socialLinks = [
     {
-      icon: <FaLinkedin className="text-white h-7 w-7" />,
+      icon: <FaLinkedin className="text-white h-6 w-6" />,
       url: "/linkedin",
+      label: "LinkedIn",
     },
     {
-      icon: <FaWhatsapp className="text-white h-7 w-7" />,
+      icon: <FaWhatsapp className="text-white h-6 w-6" />,
       url: "/whatsapp",
+      label: "WhatsApp",
     },
     {
-      icon: <FaTwitter className="text-white h-7 w-7" />,
+      icon: <FaTwitter className="text-white h-6 w-6" />,
       url: "/twitter",
+      label: "Twitter",
     },
   ];
 
   return (
-    <section id="home" className=" ">
-      <div className="container mx-auto">
-        <div className="mt-10 text-5xl font-bold leading-15">
-          <h2 className="">Hi There, </h2>
-          <h2>
-            I'm <span className="text-blue-600">Nicholas Ndereba.</span>
-          </h2>
-          <p> I am Web Developer</p>
+    <section id="home" className="container mx-auto px-6 py-20">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-10 items-center md:mt-20">
+        <div className="flex justify-center">
+          <div className="h-64 w-64 md:h-100 md:w-100 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
+            <span className="text-white text-xl font-semibold">my Image</span>
+          </div>
         </div>
-        <div className="mt-10">
-          <button className="bg-blue-600  text-white py-2 rounded-full text-xl px-5">
-            About Me
-          </button>
-        </div>
-        <div className="mt-10 flex gap-5">
-          {socialLinks.map((link, index) => (
-            <div
-              key={index}
-              className="h-15 w-15 rounded-full bg-blue-600 flex items-center justify-center"
-            >
-              <Link
-                key={index}
-                href={link.url}
-                className="flex items-center justify-center"
-              >
-                {link.icon}
-              </Link>
+        <div>
+          <div className="text-4xl md:text-5xl font-bold space-y-2">
+            <h2>Hello,</h2>
+            <h2>
+              I'm <span className="text-blue-600">Nicholas Ndereba</span>
+            </h2>
+            <p className="text-lg md:text-3xl font-normal text-gray-700 mt-4">
+              A passionate Web Developer focused on building responsive and
+              scalable web applications.
+            </p>
+          </div>
+
+          <div className="mt-8 flex flex-row gap-20 ">
+            <Link href="#about">
+              <button className="bg-blue-600 hover:bg-blue-700 transition-colors duration-300 text-white py-2 px-6 rounded-full text-lg shadow">
+                About Me
+              </button>
+            </Link>
+            <div className="flex gap-4">
+              {socialLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.url}
+                  aria-label={link.label}
+                  className="h-12 w-12 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors duration-300"
+                >
+                  {link.icon}
+                </Link>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-        <div className="bg-yellow-500 mt-15 h-100 w-100 rounded-full flex items-center justify-center mx-auto"></div>
       </div>
     </section>
   );
