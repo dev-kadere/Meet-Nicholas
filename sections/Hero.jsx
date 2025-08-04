@@ -21,7 +21,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="home" className="container mx-auto px-6 py-20">
+    <section id="home" className="container mx-auto px-6 py-5">
       <div className="grid grid-cols-1 md:grid-cols-2  gap-10 items-center md:mt-20">
         <div className="flex justify-center">
           <div className="h-64 w-64 md:h-100 md:w-100 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
