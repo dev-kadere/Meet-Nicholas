@@ -15,7 +15,14 @@ const Contact = () => {
       <div className="mt-10 shadow border rounded-2xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
           <div className="flex items-center justify-center">
-            <Image src="/person.png" alt="image one" width={450} height={450} />
+            <Image
+              src="/person.png"
+              alt="Person"
+              width={450}
+              height={450}
+              priority
+              placeholder="empty"
+            />
           </div>
 
           <form className="flex flex-col justify-center gap-4">
