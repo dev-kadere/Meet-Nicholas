@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin, FaWhatsapp, FaTwitter } from "react-icons/fa";
 
@@ -24,8 +25,16 @@ const Hero = () => {
     <section id="home" className="container mx-auto px-6 py-5">
       <div className="grid grid-cols-1 md:grid-cols-2  gap-10 items-center md:mt-20">
         <div className="flex justify-center">
-          <div className="h-64 w-64 md:h-100 md:w-100 bg-blue-600 rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-white text-xl font-semibold">my Image</span>
+          <div className="h-64 w-64 md:h-100 md:w-100  rounded-full flex items-center justify-center shadow-lg">
+            <Image
+              src="/passport.jpg"
+              alt="Nicholas Ndereba"
+              width={500}
+              height={500}
+              className="rounded-full"
+              priority
+              placeholder="empty"
+            />
           </div>
         </div>
         <div>
