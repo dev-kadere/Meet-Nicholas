@@ -48,12 +48,12 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="container mx-auto mt-10">
+    <section id="skills" className="container mx-auto mt-10  px-6 py-20">
       <div className="flex items-center gap-4 justify-center">
         <FaLaptopCode className="text-blue-600 h-10 w-10" />
         <h2 className="text-4xl text-blue-600 font-bold">My Skills & Tools</h2>
       </div>
-      <div className="grid grid-cols-3 mt-10 border rounded-2xl">
+      <div className="grid grid-cols-4 mt-10">
         {skills.map((skill, index) => (
           <div
             key={index}
