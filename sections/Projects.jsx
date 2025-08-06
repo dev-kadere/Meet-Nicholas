@@ -2,17 +2,17 @@ import { FaProjectDiagram } from "react-icons/fa";
 import Card from "../componets/Card";
 
 const projects = [
+    {
+    image: "/laxint.png",
+    title: "Laxint bulk sms",
+    description:
+      "A bulk SMS service that allows users to send messages to multiple recipients efficiently. Bult on angular ,java",
+  },
   {
     image: "/internet.png",
     title: "internet monitoring",
     description:
       "This is a monitoring tool designed to detect and record internet disconnections in real-time.",
-  },
-  {
-    image: "/bakery.png",
-    title: "judys bakery website",
-    description:
-      "A clean and responsive bakery website built using Next.js and Tailwind CSS.",
   },
   {
     image: "/admindashboard.png",
