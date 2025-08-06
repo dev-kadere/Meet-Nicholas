@@ -15,10 +15,10 @@ const projects = [
       "This is a monitoring tool designed to detect and record internet disconnections in real-time.",
   },
   {
-    image: "/admindashboard.png",
-    title: "admin dashboard",
+    image: "/anita.png",
+    title: "Anita Restaurant website",
     description:
-      "A responsive dashboard to manage users, analytics, and reports.",
+      "A restaurant website that showcases the menu, location, and contact information. Built with React and Tailwind CSS.",
   },
 ];
 
