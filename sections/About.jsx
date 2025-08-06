@@ -34,11 +34,15 @@ const About = () => {
 
           {/* Resume Button */}
           <div className="mt-8 flex justify-start">
-            <Link href="/" passHref>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full text-lg shadow transition duration-300">
+            <a
+                href="/NICHOLAS NDEREBA CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-full text-lg shadow transition duration-300 inline-block"
+              >
                 View Resume
-              </button>
-            </Link>
+              </a>
+
           </div>
         </div>
 
